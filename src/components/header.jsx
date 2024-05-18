@@ -69,7 +69,7 @@ const Header = () => {
                 spy={true}
                 smooth={true}
                 hashSpy={true}
-                offset={50}
+                offset={-50}
                 duration={500}
                 isDynamic={true}
               >
