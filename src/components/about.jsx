@@ -8,9 +8,13 @@ import pdf from "../assets/BhushanFinal2.pdf";
 
 const About = () => {
   return (
-    <div className="   justify-center  md:min-h-screen px-4 md:px-32" id="about">
-      <div className="font-poppins pb-6 flex items-center justify-center underline text-3xl md:text-5xl  font-bold leading-normal">
-        About me
+    <div className="   justify-center min-h-screen px-4 md:px-32" id="about">
+      <div className="font-poppins pb-6 flex items-center gap-x-4 justify-center  text-2xl md:text-5xl  font-bold leading-normal">
+        <div className="Flex items-center w-10 md:w-20 h-1 justify-center bg-[#9975FB]
+"></div>
+       <p>About me</p> 
+       <div className="Flex items-center w-10 md:w-20 h-1 justify-center bg-[#9975FB]
+"></div>
       </div>
 
       <div className="font-poppinss flex  flex-col md:gap-6 md:flex-row items-center justify-center text-base md:text-[20px] md:mt-[9px] font-normal leading-normal text-custom-white">
