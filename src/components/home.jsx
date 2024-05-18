@@ -8,7 +8,7 @@ import pdf from "../assets/BhushanFinal2.pdf";
 
 const Home = () => {
   return (
-    <div className="flex  items-center min-h-screen justify-center px-4 md:px-32" id="home">
+    <div className="flex  items-center lg:mt-8 md:mt-20 pb-24 justify-center px-4 md:px-32" id="home">
       <div className="mt-6 md:mt-0">
         <p className="flex items-center md:text-xl  text-base font-fira-code ">
           Hi There, I am <FaArrowRightLong className="ml-4" />
@@ -38,8 +38,8 @@ const Home = () => {
   </div>
     
 
-      <div>
-        <Image width={900} src={img} className="m-5 hidden md:flex" />
+      <div className="">
+        <Image  src={img} className="m-5 hidden md:flex md:w-[1200px]" />
       </div>
     </div>
   );
