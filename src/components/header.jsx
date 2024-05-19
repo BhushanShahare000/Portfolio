@@ -5,7 +5,7 @@ import { CiMenuFries } from "react-icons/ci";
 import { ThemeContext } from "./themeContext";
 import { menu } from "./dummy";
 import { Link } from "react-scroll";
-import Social from "../components/social";
+import { RxCross1 } from "react-icons/rx";
 const Header = () => {
   const { theme, toggleTheme } = useContext(ThemeContext);
   const [isOpen, setIsOpen] = useState(false);
@@ -61,7 +61,7 @@ const Header = () => {
               className="lg:hidden flex absolute top-3  right-3 text-3xl text-white "
               onClick={toggleMenu}
             >
-              {isOpen ? <CiMenuFries /> : <CiMenuFries />}
+              {isOpen ? <RxCross1 /> : <RxCross1 />}
             </button>
             {menu.map((item, index) => (
               <Link className="text-white rounded mt-9 text-xl hover:text-violet-500 " onClick={toggleMenu}

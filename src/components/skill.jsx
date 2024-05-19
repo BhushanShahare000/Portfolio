@@ -24,7 +24,7 @@ const Skill = () => {
       <div className="font-poppinss gap-8 md:gap-16 flex-row flex flex-wrap items-center justify-center text-base md:text-[20px] md:mt-[9px] font-normal leading-normal text-custom-white">
         {Skill1.map((item) => {
           return (
-            <div className=" flex items-center justify-center lg:text-7xl text-5xl p-8 shadow-md shadow-gray-500   border-violet-400">
+            <div key={item.id} className=" flex items-center justify-center transition-all duration-300 transform md:hover:scale-125 hover:scale-100 lg:text-7xl text-5xl p-8 shadow-md shadow-gray-500   border-violet-400">
               <div className={`hover:${item.color}`}>{item.icon}</div>
             </div>
           );
@@ -34,7 +34,7 @@ const Skill = () => {
       <div className="font-poppinss gap-8 md:gap-16 flex-row flex flex-wrap items-center justify-center text-base md:text-[20px] md:mt-[9px] font-normal leading-normal text-custom-white">
         {Skill2.map((item) => {
           return (
-            <div className=" flex items-center justify-center lg:text-7xl text-5xl  p-8 shadow-md shadow-gray-500   border-violet-400">
+            <div key={item.id} className="transition-all duration-300 transform hover:scale-100  md:hover:scale-125  flex items-center justify-center lg:text-7xl text-5xl  p-8 shadow-md shadow-gray-500   border-violet-400">
               <div className={`hover:${item.color}`}>{item.icon}</div>
             </div>
           );
