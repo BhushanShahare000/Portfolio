@@ -8,7 +8,7 @@ import pdf from "../assets/BhushanFinal2.pdf";
 
 const Home = () => {
   return (
-    <div className="flex h-screen  items-center lg:mt-8 md:mt-20 pb-24 justify-center px-4 md:px-32" id="home">
+    <div className="flex pb-24 lg:pb-8 items-center lg:mt-8 md:mt-20  justify-center px-4 md:px-32" id="home">
       <div className="mt-6 md:mt-0">
         <p className="flex items-center md:text-xl  text-lg font-fira-code ">
           Hi There, I am <FaArrowRightLong className="ml-4" />

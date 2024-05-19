@@ -5,7 +5,7 @@ import { Skill2 } from "./dummy";
 const Skill = () => {
   return (
     <div
-      className=" min-h-screen justify-center items-center  px-4 md:px-32"
+      className="pb-24  justify-center items-center  "
       id="skill"
     >
       <div className="font-poppins pb-6 flex items-center gap-x-4 justify-center  text-2xl md:text-5xl  font-bold leading-normal">
@@ -20,7 +20,7 @@ const Skill = () => {
         ></div>
       </div>
       
-<div className="flex-col flex gap-8 justify-center items-center md:mt-24 ">
+<div className="flex-col flex gap-8 justify-center items-center md:py-20 py-8">
       <div className="font-poppinss gap-8 md:gap-16 flex-row flex flex-wrap items-center justify-center text-base md:text-[20px] md:mt-[9px] font-normal leading-normal text-custom-white">
         {Skill1.map((item) => {
           return (
