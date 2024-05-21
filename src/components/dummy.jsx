@@ -8,8 +8,15 @@ import { SiNextui } from "react-icons/si";
 import { FaGitAlt } from "react-icons/fa";
 import achive1 from "../assets/codecode.jpeg";
 import achive2 from "../assets/codecode1.jpeg";
-// import achive3 from "../assets/appathon.jpeg";
+import achive3 from "../assets/appathon.jpeg";
 import achive4 from "../assets/appathon1.jpeg";
+import achive5 from "../assets/chase.jpeg";
+import achive6 from "../assets/chase1.jpeg";
+import achive7 from "../assets/info1.jpeg";
+import achive8 from "../assets/info.jpeg";
+
+
+
 
 export const menu = [
   {
@@ -149,18 +156,28 @@ export const achivement = [
     certificate:achive2,
   },
   {
-    // img1:achive3,
-    id:"1",
+    img1:achive3,
+    id:"2",
     rank:"first winner",
     title:"Appathon'23 Winner",
     date:"Feb 22, 2023",
     certificate:achive4,
   },
   {
-    id:"2",
+    img1:achive5,
+    id:"3",
     rank:"first winner",
-    title:"Appathon'23 Winner",
+    title:"Chase The web",
     date:"Feb 22, 2023",
+    certificate:achive6,
+  },
+  {
+    img1:achive8,
+    id:"4",
+    rank:"Awarded",
+    title:"infomatrix",
+    date:"Feb 22, 2023",
+    certificate:achive7,
   },
 
 

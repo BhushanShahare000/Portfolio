@@ -24,29 +24,31 @@ const Achivement= ()=>{
           </div>
 
 
-          <div className='flex flex-wrap m-3 gap-8 justify-center'>
-  {achivement.map((item) => (
-    <div
-      key={item.id}
-      className={`flex-1 sm:flex-none sm:w-full md:w-1/2 lg:w-1/3 xl:w-1/3 max-w-xs rounded-lg border border-gray-300 p-4  hover:border-gray-400 hover:shadow-2xl ${
-        theme === 'dark' ? 'bg-[#2A3B5F] text-white' : 'bg-[#f9f9f9] text-black'
-      }`}
-    >
-      <img src={item.img1} alt="" className='w-full h-40 object-cover rounded-t-lg mb-4 shadow-md'/>
-      <div className="flex items-center justify-between">
-        <div className='flex-col flex justify-between'>
-          <p className="font-fira-code text-lg font-semibold ">{item.rank}</p>
-          <p className='text-base font-medium mb-1'>{item.title}</p>
-          <p className='text-xs text-gray-400'>{item.date}</p>
-        </div>
-        <div>
-          <Button className="bg-gradient-to-r from-violet-500 to-blue-500 text-white py-2 px-4 rounded-md shadow-lg hover:shadow-xl transform hover:scale-105 transition-transform">
-            <a href={item.certificate} className="text-white no-underline">Certificate</a>
-          </Button>
+          <div className='flex items-center justify-center  p-4'>
+  <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8'>
+    {achivement.map((item) => (
+      <div
+        key={item.id}
+        className={`max-w-xs rounded-lg border border-gray-300 p-4 hover:border-gray-400 hover:shadow-2xl ${
+          theme === 'dark' ? 'bg-[#2A3B5F] text-white' : 'bg-[#f9f9f9] text-black'
+        }`}
+      >
+        <img src={item.img1} alt="" className='w-full h-40 object-cover rounded-t-lg mb-4 shadow-md'/>
+        <div className="flex items-center justify-between">
+          <div className='flex-col flex justify-between'>
+            <p className="font-fira-code text-lg font-semibold">{item.rank}</p>
+            <p className='text-base font-medium mb-1'>{item.title}</p>
+            <p className='text-xs text-gray-400'>{item.date}</p>
+          </div>
+          <div>
+            <Button className="bg-gradient-to-r from-violet-500 to-blue-500 text-white py-2 px-4 rounded-md shadow-lg hover:shadow-xl transform hover:scale-105 transition-transform">
+              <a href={item.certificate} className="text-white no-underline">Certificate</a>
+            </Button>
+          </div>
         </div>
       </div>
-    </div>
-  ))}
+    ))}
+  </div>
 </div>
 
 
