@@ -6,6 +6,10 @@ import { FaBootstrap } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { SiNextui } from "react-icons/si";
 import { FaGitAlt } from "react-icons/fa";
+import achive1 from "../assets/codecode.jpeg";
+import achive2 from "../assets/codecode1.jpeg";
+// import achive3 from "../assets/appathon.jpeg";
+import achive4 from "../assets/appathon1.jpeg";
 
 export const menu = [
   {
@@ -135,3 +139,30 @@ export const Project1= [
 ]
 
 
+export const achivement = [
+  {
+    id:"1",
+    img1:achive1,
+    rank:"Second winner",
+    title:"Codecode",
+    date:"Feb 22, 2023",
+    certificate:achive2,
+  },
+  {
+    // img1:achive3,
+    id:"1",
+    rank:"first winner",
+    title:"Appathon'23 Winner",
+    date:"Feb 22, 2023",
+    certificate:achive4,
+  },
+  {
+    id:"2",
+    rank:"first winner",
+    title:"Appathon'23 Winner",
+    date:"Feb 22, 2023",
+  },
+
+
+  
+]

@@ -8,6 +8,7 @@ import About from "./components/about";
 import Social from "./components/social";
 import Skill from "./components/skill";
 import Projects from "./components/projects";
+import Achivement from "./components/achivement";
 function App() {
   const { theme } = useContext(ThemeContext);
 
@@ -23,6 +24,7 @@ function App() {
       <About/>
       <Skill/>
       <Projects/>
+      <Achivement/>
     </div>
   );
 }
