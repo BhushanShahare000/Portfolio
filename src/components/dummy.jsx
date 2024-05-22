@@ -129,19 +129,19 @@ export const Project1= [
   },
   {
     "id": 4,
-    "title": "WebTekdi",
-    "description": "WebTekdi offers seamless online retail and service solutions. Empower your business with efficient e-commerce management.",
-    "skills": ["html", "React", "tailwind", "next ui"],
-    "projectLink": "http://example.com/webtekdi",
-    "githubLink": "http://github.com/user/webtekdi"
+    "title": "My movie",
+    "description": "simple movie webpage Ui to added search functionalities to get movie ",
+    "skills": ["html", "csss", "javascript"],
+    "projectLink": "https://m-watch-wave.vercel.app/",
+    "githubLink": "https://github.com/BhushanShahare000/my-movie"
   },
   {
     "id": 6,
-    "title": "WebTekdi",
-    "description": "WebTekdi offers seamless online retail and service solutions. Empower your business with efficient e-commerce management.",
+    "title":"My-Portfolio",
+    "description": "Skilled professional with diverse talents, focused on innovation and quality. Passionate about making a difference and achieving success.",
     "skills": ["html", "React", "tailwind", "next ui"],
-    "projectLink": "http://example.com/webtekdi",
-    "githubLink": "http://github.com/user/webtekdi"
+    "projectLink": "https://bhushan-portfolio-phi.vercel.app/",
+    "githubLink": "https://github.com/BhushanShahare000/Portfolio"
   }
 ]
 
@@ -182,4 +182,14 @@ export const achivement = [
 
 
   
+]
+
+
+export const social=[
+  {
+    link1:"https://www.linkedin.com/in/bhushan-shahare-454127253/",
+    link2:"https://github.com/BhushanShahare000",
+    link3:"https://www.instagram.com/bhushanshahare000?igsh=MWI3eHp5Zm1wd2w0eA==",
+    link4:"https://www.facebook.com/bhushan.shahare.129",
+  },
 ]

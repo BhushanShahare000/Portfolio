@@ -42,7 +42,7 @@ const Projects =()=> {
           </div>
           <div className='w-auto h-[1px] bg-gray-500'></div>
           <div className='flex justify-between p-2'>
-            <p className='text-xl'>{item.title}</p>
+            <p className='text-xl font-semibold'>{item.title}</p>
             <BsGlobe2 className='text-2xl'/>
           </div>
           <p className='p-2'>{item.description}</p>

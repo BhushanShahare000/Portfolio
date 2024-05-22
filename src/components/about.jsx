@@ -28,13 +28,13 @@ const About = () => {
           </p>
 
           <p className="font-poppinss text-base md:text-[20px] md:mt-[9px] font-normal leading-normal text-custom-white">
-            Hello Geeks, I'm Bhushan Shahare! I'm passionate about frontend
+            Hello Geeks,  I'm passionate about frontend
             development and currently seeking job opportunities. I specialize in
             creating and improving responsive, user-friendly websites.
           </p>
 
           <Button
-            className="bg-[#9975FB] flex mt-4 p-2 md:mt-[44px] rounded-md md:text-xl text-base font-fira-code"
+            className="bg-gradient-to-r from-violet-500 to-blue-500 text-white flex mt-4 p-2 md:mt-[44px] rounded-md md:text-xl text-base font-fira-code"
             endContent={<FaDownload className="ml-2" />}
           >
             <a href={pdf}> Download Resume</a>

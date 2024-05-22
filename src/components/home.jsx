@@ -29,7 +29,7 @@ const Home = () => {
        
           
           <Button 
-            className="bg-[#9975FB] flex mt-5 p-2 md:mt-[44px] rounded-md md:text-xl text-base font-fira-code"
+            className="bg-gradient-to-r from-violet-500 to-blue-500 text-white flex mt-5 p-2 md:mt-[44px] rounded-md md:text-xl text-base font-fira-code"
             endContent={<FaDownload className="ml-2" />}
           >
           <a href={pdf}>  Download Resume</a> 
