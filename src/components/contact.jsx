@@ -1,29 +1,33 @@
-import React, { useState } from "react";
+import React, { useContext,useState } from "react";
 import { FaLinkedin, FaGithub, FaInstagram, FaFacebook } from "react-icons/fa";
 import { FaMapLocationDot } from "react-icons/fa6";
 import { IoMdMail } from "react-icons/io";
 import { social } from "./dummy";
-import { FaRegCopyright } from "react-icons/fa";
+import { ThemeContext } from "./themeContext";
 
 function Contact() {
-  const [formData, setFormData] = useState({
+  
+  const { theme, toggleTheme } = useContext(ThemeContext);
+  const initialFormData = {
     name: "",
     email: "",
     message: "",
-  });
+  };
+
+  const [formData, setFormData] = useState(initialFormData);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
-/// Fetching firebse Data ///
+
   const handleSubmit = async (e) => {
-    const { name, email, message } = formData;
     e.preventDefault();
+    const { name, email, message } = formData;
     const options = {
       method: "POST",
       headers: {
-        "Content-Type": "aplication/json",
+        "Content-Type": "application/json",
       },
       body: JSON.stringify({ name, email, message }),
     };
@@ -34,45 +38,37 @@ function Contact() {
 
     if (res) {
       Toastify({
-          text: "Message Sent",
-          duration: 3000, 
-          close: true, 
-          gravity: "top", 
-          position: "right", 
-          className: "bg-green-500 text-white px-4 py-2 rounded-lg shadow-lg max-w-full sm:max-w-sm",
-          stopOnFocus: true,
+        text: "Message Sent",
+        duration: 3000,
+        close: true,
+        gravity: "top",
+        position: "right",
+        className: "bg-green-500 text-white px-4 py-2 rounded-lg shadow-lg max-w-full sm:max-w-sm",
+        stopOnFocus: true,
       }).showToast();
-  } else {
+      setFormData(initialFormData); // Reset form data
+    } else {
       Toastify({
-          text: "Error occurred",
-          duration: 3000,
-          close: true,
-          gravity: "top",
-          position: "right",
-          className: "bg-red-500 text-white px-4 py-2 rounded-lg shadow-lg max-w-full sm:max-w-sm",
-          stopOnFocus: true,
+        text: "Error occurred",
+        duration: 3000,
+        close: true,
+        gravity: "top",
+        position: "right",
+        className: "bg-red-500 text-white px-4 py-2 rounded-lg shadow-lg max-w-full sm:max-w-sm",
+        stopOnFocus: true,
       }).showToast();
-  }
+    }
   };
-///// end  fetching data ////
+
   return (
-    <div
-      className=" pb-24 justify-center items-center  px-4 md:px-32"
-      id="contact"
-    >
-      <div className="font-poppins pb-6 flex items-center gap-x-4 justify-center  text-2xl md:text-5xl  font-bold leading-normal">
-        <div
-          className="Flex items-center w-10 md:w-20 h-1 justify-center bg-[#9975FB] 
-    "
-        ></div>
+    <div className="pb-4 justify-center items-center px-4 md:px-32" id="contact">
+      <div className="font-poppins pb-6 flex items-center gap-x-4 justify-center text-2xl md:text-5xl font-bold leading-normal">
+        <div className="Flex items-center w-10 md:w-20 h-1 justify-center bg-[#9975FB]"></div>
         <p>Contact</p>
-        <div
-          className="Flex items-center w-10 md:w-20 h-1 justify-center bg-[#9975FB]
-    "
-        ></div>
+        <div className="Flex items-center w-10 md:w-20 h-1 justify-center bg-[#9975FB]"></div>
       </div>
 
-      <div className="flex flex-col lg:flex-row items-center justify-around  p-4">
+      <div className="flex flex-col lg:flex-row items-center justify-around p-4">
         <div className="lg:w-1/2 mb-8 lg:mb-0 lg:pr-8 hidden lg:block">
           <h2 className="text-3xl font-bold mb-4">Drop me a message!</h2>
           <p className="mb-4 font-sans">
@@ -95,7 +91,7 @@ function Contact() {
           <form
             method="POST"
             onSubmit={handleSubmit}
-            className="bg-white p-6 rounded-2xl shadow-lg max-w-sm mx-auto "
+            className={` p-6 rounded-2xl shadow-lg max-w-sm mx-auto ${theme === 'dark' ? 'bg-gray-200 text-white' : 'bg-white text-black'}`}
           >
             <div className="mb-4">
               <label
@@ -177,6 +173,11 @@ function Contact() {
             </a>
           </div>
         ))}
+      </div>
+      <div className="flex justify-center sticky mt-10 md:mt-16">
+        <p className="text-center text-sm md:text-xl">
+          Made and developed by Bhushan Shahare with <span className="text-red-500">&hearts;</span>
+        </p>
       </div>
     </div>
   );
