@@ -116,7 +116,7 @@ export const Project1= [
     "title": "Restro_Order",
     "description": "A simple and intuitive UI design for a restaurant ordering system. Users easily place, customize, and manage orders efficiently.",
     "skills": ["html", "css", "javascript", "tailwind"],
-    "projectLink": "http://example.com/restro_order",
+    "projectLink": "https://restro-order.vercel.app/#home",
     "githubLink": "http://github.com/user/restro_order"
   },
   {
