@@ -23,8 +23,8 @@ const Header = () => {
       </div>
 
       <div className="hidden gap-6 lg:flex text-lg">
-        {menu.map((item, index) => (
-          <div key={index} className="hover:text-violet-500  ">
+        {menu.map((item, index) =>(
+          <div key={index} className="hover:text-violet-500">
             <Link
               className="cursor-pointer"
               to={item.link}
