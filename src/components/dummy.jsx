@@ -117,7 +117,7 @@ export const Project1= [
     "description": "A simple and intuitive UI design for a restaurant ordering system. Users easily place, customize, and manage orders efficiently.",
     "skills": ["html", "css", "javascript", "tailwind"],
     "projectLink": "https://restro-order.vercel.app/#home",
-    "githubLink": "http://github.com/user/restro_order"
+    "githubLink": "https://github.com/BhushanShahare000/Restro_Order"
   },
   {
     "id": 4,
@@ -125,7 +125,7 @@ export const Project1= [
     "description": "WebTekdi offers seamless online retail and service solutions. Empower your business with efficient e-commerce management.",
     "skills": ["html", "React", "tailwind", "next ui"],
     "projectLink": "http://example.com/webtekdi",
-    "githubLink": "http://github.com/user/webtekdi"
+    "githubLink": "https://github.com/BhushanShahare000/Webtekdi"
   },
   {
     "id": 4,
