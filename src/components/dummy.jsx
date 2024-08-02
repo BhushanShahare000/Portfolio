@@ -124,8 +124,8 @@ export const Project1= [
     "title": "WebTekdi",
     "description": "WebTekdi offers seamless online retail and service solutions. Empower your business with efficient e-commerce management.",
     "skills": ["html", "React", "tailwind", "next ui"],
-    "projectLink": "http://example.com/webtekdi",
-    "githubLink": "https://github.com/BhushanShahare000/Webtekdi"
+    "projectLink": "https://web-tekdi-plus.vercel.app/categories",
+    "githubLink": "https://github.com/BhushanShahare000/WebTekdi-plus"
   },
   {
     "id": 4,
