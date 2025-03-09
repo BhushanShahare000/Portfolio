@@ -4,17 +4,21 @@ import img from "../assets/profile.jpg";
 import { Image } from "@nextui-org/react";
 import { Button } from "@nextui-org/react";
 import { FaDownload } from "react-icons/fa";
-import pdf from "../assets/BhushanFinal2.pdf";
+import pdf from "../assets/Bhushan_Shahare_Resume.pdf";
 
 const About = () => {
   return (
     <div className="   justify-center pb-24  px-4 md:px-32" id="about">
       <div className="font-poppins pb-6 flex items-center gap-x-4 justify-center  text-2xl md:text-5xl  font-bold leading-normal">
-        <div className="Flex items-center w-10 md:w-20 h-1 justify-center bg-[#9975FB]
-"></div>
-       <p>About me</p> 
-       <div className="Flex items-center w-10 md:w-20 h-1 justify-center bg-[#9975FB]
-"></div>
+        <div
+          className="Flex items-center w-10 md:w-20 h-1 justify-center bg-[#9975FB]
+"
+        ></div>
+        <p>About me</p>
+        <div
+          className="Flex items-center w-10 md:w-20 h-1 justify-center bg-[#9975FB]
+"
+        ></div>
       </div>
 
       <div className="font-poppinss flex  flex-col md:gap-10 md:flex-row items-center justify-center text-base md:text-[20px] md:mt-[9px] font-normal leading-normal text-custom-white">
@@ -28,9 +32,9 @@ const About = () => {
           </p>
 
           <p className="font-poppinss text-base md:text-[20px] md:mt-[9px] font-normal leading-normal text-custom-white">
-            Hello Geeks,  I'm passionate about frontend
-            development and currently seeking job opportunities. I specialize in
-            creating and improving responsive, user-friendly websites.
+            Hello Geeks, I'm passionate about frontend development and currently
+            seeking job opportunities. I specialize in creating and improving
+            responsive, user-friendly websites.
           </p>
 
           <Button

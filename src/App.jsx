@@ -3,7 +3,7 @@ import "./App.css";
 import Header from "./components/header";
 import { useContext } from "react";
 import { ThemeContext } from "./components/themeContext";
-import Home from "./components/home"
+import Home from "./components/home";
 import About from "./components/about";
 import Social from "./components/social";
 import Skill from "./components/skill";
@@ -20,13 +20,13 @@ function App() {
       }`}
     >
       <Header />
-      <Social/>
-      <Home/>
-      <About/>
-      <Skill/>
-      <Projects/>
-      <Achivement/>
-      <Contact/>
+      <Social />
+      <Home />
+      <About />
+      <Skill />
+      <Projects />
+      <Achivement />
+      <Contact />
     </div>
   );
 }

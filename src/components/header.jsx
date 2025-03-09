@@ -16,14 +16,18 @@ const Header = () => {
   };
 
   return (
-    <div className={`sticky top-0 z-50 shadow-md flex p-2 lg:px-10 justify-between items-center transition-colors duration-300 ${theme === 'dark' ? 'bg-gray-800 text-white' : 'bg-white text-black'}`}>
+    <div
+      className={`sticky top-0 z-50 shadow-md flex p-2 lg:px-10 justify-between items-center transition-colors duration-300 ${
+        theme === "dark" ? "bg-gray-800 text-white" : "bg-white text-black"
+      }`}
+    >
       <div className="flex items-center text-center text-lg">
         <FaRegCopyright />
         <p className="font-semibold ml-2 text-xl">Bhushan Shahare</p>
       </div>
 
       <div className="hidden gap-6 lg:flex text-lg">
-        {menu.map((item, index) =>(
+        {menu.map((item, index) => (
           <div key={index} className="hover:text-violet-500">
             <Link
               className="cursor-pointer"
@@ -43,18 +47,20 @@ const Header = () => {
 
       <div className="flex items-center gap-3 justify-center">
         <button onClick={toggleTheme} className="p-2 rounded-full text-3xl">
-          {theme === "dark" ? (
-            <MdOutlineLightMode />
-          ) : (
-            <MdDarkMode />
-          )}
+          {theme === "dark" ? <MdOutlineLightMode /> : <MdDarkMode />}
         </button>
 
         <button className="lg:hidden flex text-3xl" onClick={toggleMenu}>
           {isOpen ? <RxCross1 /> : <CiMenuFries />}
         </button>
         {isOpen && (
-          <div className={`flex flex-col lg:hidden absolute top-0 left-0 w-full h-screen items-center transition-colors duration-300 ${theme === 'dark' ? 'bg-gray-800 text-white' : 'bg-white text-black'}`}>
+          <div
+            className={`flex flex-col lg:hidden absolute top-0 left-0 w-full h-screen items-center transition-colors duration-300 ${
+              theme === "dark"
+                ? "bg-gray-800 text-white"
+                : "bg-white text-black"
+            }`}
+          >
             <button
               className="lg:hidden flex absolute top-3 right-3 text-3xl"
               onClick={toggleMenu}
