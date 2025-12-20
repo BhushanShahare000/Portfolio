@@ -1,4 +1,3 @@
-import React from "react";
 import "./App.css";
 import Header from "./components/header";
 import { useContext } from "react";

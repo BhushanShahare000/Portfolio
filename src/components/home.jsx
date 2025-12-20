@@ -4,7 +4,7 @@ import img from "../assets/developer.png";
 import { Image } from "@nextui-org/react";
 import { Button } from "@nextui-org/react";
 import { FaDownload } from "react-icons/fa";
-import pdf from "../assets/Bhushan_Shahare_Resume.pdf";
+import pdf from "../assets/Bhushan_Shahare_Resume2.pdf";
 const Home = () => {
   return (
     <div

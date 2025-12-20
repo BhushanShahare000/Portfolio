@@ -1,10 +1,8 @@
-import React from "react";
-import { FaArrowRightLong } from "react-icons/fa6";
 import img from "../assets/profile.jpg";
 import { Image } from "@nextui-org/react";
 import { Button } from "@nextui-org/react";
 import { FaDownload } from "react-icons/fa";
-import pdf from "../assets/Bhushan_Shahare_Resume.pdf";
+import pdf from "../assets/Bhushan_Shahare_Resume2.pdf";
 
 const About = () => {
   return (
