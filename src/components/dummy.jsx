@@ -17,6 +17,9 @@ import achive5 from "../assets/chase.jpeg";
 import achive6 from "../assets/chase1.jpeg";
 import achive7 from "../assets/info1.jpeg";
 import achive8 from "../assets/info.jpeg";
+import advitaImg from "../assets/advita.png";
+import aptyreImg from "../assets/aptyre.png";
+import smartschoolImg from "../assets/smartschool.png";
 
 export const menu = [
   {
@@ -26,6 +29,10 @@ export const menu = [
   {
     name: "<About/>",
     link: "about",
+  },
+  {
+    name: "<Experience/>",
+    link: "experience",
   },
   {
     name: "<Skill/>",
@@ -117,13 +124,47 @@ export const Skill3 = [
 
 export const Project1 = [
   {
-    id: 1,
-    title: "ToDo",
-    description:
-      "A simple and  efficient to-do list project that allows users to add, manage, and track their tasks seamlessly.",
-    skills: ["html", "css", "javascript"],
-    projectLink: "https://to-do-list-rho-topaz.vercel.app/",
-    githubLink: "https://github.com/BhushanShahare000/To-Do-List",
+    id: 7,
+    title: "Advita – FinTech Platform",
+    description: "Role-based dashboards for Cooperative Banks. Developed workflows for loans, EMI management, and Razorpay integrations.",
+    skills: ["React", "Tailwind", "Zustand"],
+    image: advitaImg,
+    projectLink: "",
+    githubLink: "",
+  },
+  {
+    id: 8,
+    title: "AP Tyre – Business ERP",
+    description: "Modules for Sales, Purchases, Employees, and Invoices. Included GST, E-Invoice, and E-Way Bill workflows.",
+    skills: ["React", "Tailwind", "Zustand"],
+    image: aptyreImg,
+    projectLink: "",
+    githubLink: "",
+  },
+  {
+    id: 9,
+    title: "Smart School – SaaS",
+    description: "Scalable Multi-School ERP platform with modules for Students, Staff, Attendance, Exams, and centralized dashboards.",
+    skills: ["React", "Tailwind", "Zustand"],
+    image: smartschoolImg,
+    projectLink: "",
+    githubLink: "",
+  },
+  {
+    id: 10,
+    title: "Grablo",
+    description: "A food restaurant finder app that allows users to see and filter the nearest food shops efficiently.",
+    skills: ["React", "Tailwind CSS"],
+    projectLink: "https://grablo-23lm.vercel.app/",
+    githubLink: "",
+  },
+  {
+    id: 11,
+    title: "Ecom",
+    description: "A fully functional e-commerce website designed for seamless online shopping and inventory display.",
+    skills: ["React", "Tailwind CSS"],
+    projectLink: "https://swift-sell-rosy.vercel.app/",
+    githubLink: "",
   },
   {
     id: 2,
@@ -151,15 +192,6 @@ export const Project1 = [
     skills: ["html", "React", "tailwind", "next ui"],
     projectLink: "https://web-tekdi-plus.vercel.app/categories",
     githubLink: "https://github.com/BhushanShahare000/WebTekdi-plus",
-  },
-  {
-    id: 4,
-    title: "My movie",
-    description:
-      "simple movie webpage Ui to added search functionalities to get movie ",
-    skills: ["html", "csss", "javascript"],
-    projectLink: "https://m-watch-wave.vercel.app/",
-    githubLink: "https://github.com/BhushanShahare000/my-movie",
   },
   {
     id: 6,
@@ -215,4 +247,52 @@ export const social = [
       "https://www.instagram.com/bhushanshahare000?igsh=MWI3eHp5Zm1wd2w0eA==",
     link4: "https://www.facebook.com/bhushan.shahare.129",
   },
+];
+
+export const experience = [
+  {
+    id: 1,
+    title: "Frontend Developer",
+    company: "TalentRise Technokrate",
+    location: "Nagpur, Maharashtra",
+    duration: "Present",
+    description: [
+      "Developing scalable frontend applications using React.js, Next.js, Tailwind CSS, Zustand, and REST APIs.",
+      "Building responsive dashboards, reusable components, and role-based user interfaces.",
+      "Working on enterprise applications including FinTech, ERP, and Multi-School SaaS platforms."
+    ]
+  },
+  {
+    id: 2,
+    title: "Web Developer",
+    company: "Skillfinity Infoventures Pvt. Ltd.",
+    location: "Remote",
+    duration: "Aug 2024 – Feb 2025",
+    description: [
+      "Developed responsive web applications and interfaces using React.js.",
+      "Implemented responsive design, SEO practices, cross-browser compatibility, accessibility, and bug fixes."
+    ]
+  },
+  {
+    id: 3,
+    title: "Frontend Developer",
+    company: "Informatrix IT Solution Pvt. Ltd.",
+    location: "Nagpur, Maharashtra",
+    duration: "June 2023 – Feb 2024",
+    description: [
+      "Developed responsive frontend interfaces using React.js.",
+      "Integrated frontend applications with backend APIs and improved user experience."
+    ]
+  },
+  {
+    id: 4,
+    title: "Web Developer Intern",
+    company: "Take It Ideas",
+    location: "Remote",
+    duration: "Aug 2022 – Oct 2022",
+    description: [
+      "Developed responsive web interfaces using HTML, CSS, and JavaScript.",
+      "Assisted in frontend development and implementation of modern website designs."
+    ]
+  }
 ];

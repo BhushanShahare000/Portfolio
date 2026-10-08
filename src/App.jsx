@@ -6,6 +6,7 @@ import Home from "./components/home";
 import About from "./components/about";
 import Social from "./components/social";
 import Skill from "./components/skill";
+import Experience from "./components/experience";
 import Projects from "./components/projects";
 import Achivement from "./components/achivement";
 import Contact from "./components/contact";
@@ -22,6 +23,7 @@ function App() {
       <Social />
       <Home />
       <About />
+      <Experience />
       <Skill />
       <Projects />
       <Achivement />
